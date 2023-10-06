@@ -33,7 +33,7 @@ A reboot of the original game, introducing a simplified rule system and emphasiz
 
 #### Paranoia XP: Imploding Now (2005):
 
-An updated version of the XP Edition with additional content and rules for character creation and gameplay. Emphasized the humor and dark satire inherent in the game.
+An updated version of the XP Edition with additional content and rules for character creation and gameplay. Emphasized the humour and dark satire inherent in the game.
 
 #### Paranoia: Troubleshooters (2017):
 
@@ -63,27 +63,87 @@ The following prototype was created using [Excalidraw](https://excalidraw.com/) 
 
 On desktop view (the main focus)
 
+[Desktop plan](/assets/plan-desktop.png)
 
 On mobile view 
 
+[Mobile plan](/assets/plan-mobile.png)
+
+The plan for the layout will be using responsive design, with the main design being desktop-first but all elements able to resize down to a mobile-friendly view.
+
+### Styling
+
+The intention is to make a design that fits with the aesthetic of the character sheet whilst also ensuring compliance with best practices and standards. 
+
+#### Fonts
+
+The following fonts will be used from Google Fonts, under the SIL OPEN FONT LICENSE Version 1.1:
+* Inter by Rasmus Andersson
+* Bebas Neue by Ryoichi Tsunekawa
+* Courier Prime by Alan Dague-Greene
+
+#### CSS themes
+
+The [Bulma](https://bulma.io/) css framework will be used. With a modified version of [Bulmaswatch Lux](https://github.com/jenil/bulmaswatch/tree/gh-pages/lux) for theming.
 
 ## Planning
 
+The planning board is located [here](https://github.com/users/DMurf/projects/3) and is setup using the GitHub project template "Team Backlog". This is setup as a KanBan board.
+
 ### Agile methodology
 
-Kanban?
 
-### Definition of done
+This project will use a cut-down version of KanBan [here](https://www.developmentthatpays.com/files/DevelopmentThatPays-ScrumVsKanban-CheatSheet-1_6.pdf) and [here](https://learn.microsoft.com/en-us/devops/plan/what-is-kanban) however as there's only one member of the team, many of the ceremonies hold little-to-no value. 
 
-// todo
+### Features
 
-### Definition of ready
-
-### Acceptance critera
+Features are the definition of a deliverable in this application, something that is marketable or demonstrable to a user such as "This button saves the picture to your computer" or "Styling UI to fit corporate theme". The principle behind features is the [**Minimum Marketable Feature**] (https://www.techtarget.com/whatis/definition/minimum-marketable-feature-MMF), where each feature is delivered because of value to either the business or users.
 
 ### User stories
 
+User stories are tickets below Features, and following the Extreme Programming design follow the pattern
+
+* As a <role> I want to <verb-centric behaviour> so that <user value added>
+
+Each user story will be assigned an estimated ticket size, this is based on fibonacci (1, 2, 3, 5, 8, 13) and this signifies the relative complexity of each ticket. 
+
+A user story is intended to be the placeholder of a conversation, and should not be overly proscribed.
+
+### Definition of ready
+
+A feature is ready once it has enough description to convey the goal of the ticket. 
+
+A user story is ready once it has a complete story, a defined or linked user persona, and a list of acceptance criteria. It's beneficial to have diagrams, pictures, or extra information to help flesh out the story. 
+
+### Definition of done
+
+A feature is done once all it's user stories have been fulfilled and tested.
+Additionally a feature would be approved by the product owner as meeting all required functionality. 
+
+A user story is done when all it's acceptance criteria have been tested and pass reliably. 
+Additionally a User Story would ideally be peer-reviewed by another developer.
+
+### Acceptance criteria
+
+Acceptance criteria are often in the form of "Given, When, Then" format such as 
+
+* Given I navigate to the home page
+* When I click on the randomise button
+* Then all free-text fields should have text entered
+
 ### MVP
+
+The Minimum Viable Product for the PPEGen would follow the following:
+
+* A public user can fill in all the fields themselves.
+* A public user can click randomise all and all fields would be filled in for them. 
+* A public user can choose to print the character sheet in a printer-friendly way.
+* A public user can randomise sections of the character sheet and over-write any options they choose to.
+
+#### Extended goals
+
+* A public user can save their character to local storage
+* A public user can download their character configuration to pass to other players
 
 ## Building
 
@@ -106,17 +166,32 @@ Yaml/Powershell
 
 ## Testing
 
-### Security /OWASP/ Pen Test
+### Functional
 
-### Accessibility
+#### Unit testing
 
-### Unit testing
+#### UI/Automated testing
 
-### UI/Automated testing
+#### Manual testing
 
-### Manual testing
+### Non-functional
+
+#### Volume/Stress testing/Load testing
+
+#### Accessibility
+
+### Standards
+
+#### WCAG compliance
+
+### Security
+
+#### OWASP
+
+#### Pen Test
 
 ### Monitoring
+
 
 ## Documentation
 
