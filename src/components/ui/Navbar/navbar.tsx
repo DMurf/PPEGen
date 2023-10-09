@@ -1,7 +1,7 @@
 function GetHeader(){
     return (
         <>
-        <nav className="navbar" role="navigation" aria-label="main navigation">
+        <nav className="navbar is-danger" role="navigation" aria-label="main navigation">
   <div className="navbar-brand">
     PPE:Gen
 
