@@ -4,7 +4,9 @@ Built for Northeastern University.
 
 All ownership of Paranoia, Paranoia Perfect Edition, or other related assets are owned by Mongoose Publishing. 
 
-<badges>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7e13be0d-1830-4d9a-8139-2e40f89338e6/deploy-status)](https://app.netlify.com/sites/ppegen-test/deploys)
+
+
 
 ## Proposition
 
