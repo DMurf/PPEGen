@@ -19,6 +19,7 @@ jobs:
         uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - uses: ArtiomTr/jest-coverage-report-action@v2
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         env:
