@@ -15,14 +15,13 @@ jobs:
       - run: npm install
       - run: npm run build --if-present
       - run: npm test
-      - uses: actions/checkout@v4
 
       # ( Build to ./dist or other directory... )
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2.0
         with:
-          publish-dir: './dist'
+          publish-dir: 'dist'
           production-branch: main
           deploy-message: "Deploy from GitHub Actions"
           enable-pull-request-comment: false
