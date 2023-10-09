@@ -1,6 +1,7 @@
 # .github/workflows/netlify.yml
 name: Build and Deploy to Netlify TEST
 on:
+  pull_request_target:
   push:
   pull_request:
 jobs:
