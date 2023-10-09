@@ -219,7 +219,6 @@ This is a React.js project, bootstrapped with vite - v4.4.1 configured with Type
 
 ## Getting Started
 
-CD TO PPEGEN!
 
 First, run the development server:
 
