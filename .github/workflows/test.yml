@@ -1,5 +1,5 @@
 # .github/workflows/netlify.yml
-name: Build and Deploy to Netlify
+name: Build and Deploy to Netlify TEST
 on:
   push:
   pull_request:
