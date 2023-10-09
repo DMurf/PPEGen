@@ -4,12 +4,12 @@ Built for Northeastern University.
 
 All ownership of Paranoia, Paranoia Perfect Edition, or other related assets are owned by Mongoose Publishing. 
 
-[![codecov](https://codecov.io/gh/DMurf/PPEGen/graph/badge.svg?token=XSRB9S84OD)](https://codecov.io/gh/DMurf/PPEGen)
-
-[![Known Vulnerabilities](https://snyk.io/test/github/dmurf/PPEGEN/badge.svg)]
-
-TEST [![Netlify Status](https://api.netlify.com/api/v1/badges/7e13be0d-1830-4d9a-8139-2e40f89338e6/deploy-status)](https://app.netlify.com/sites/ppegen-test/deploys)
-LIVE [![Netlify Status](https://api.netlify.com/api/v1/badges/3747878d-2c7c-4371-85fe-aeff6ff1c456/deploy-status)](https://app.netlify.com/sites/ppegen/deploys)
+| | Badge | ENV |
+| --- | --- | --- |
+| Code Cov | [![codecov](https://codecov.io/gh/DMurf/PPEGen/graph/badge.svg?token=XSRB9S84OD)](https://codecov.io/gh/DMurf/PPEGen) |
+| SNYK | ![Known Vulnerabilities](https://snyk.io/test/github/dmurf/PPEGEN/badge.svg) |
+| TEST ENV | [![Netlify Status](https://api.netlify.com/api/v1/badges/7e13be0d-1830-4d9a-8139-2e40f89338e6/deploy-status?branch=main)](https://app.netlify.com/sites/ppegen-test/deploys) | https://ppegen-test.netlify.app/
+| LIVE ENC | [![Netlify Status](https://api.netlify.com/api/v1/badges/3747878d-2c7c-4371-85fe-aeff6ff1c456/deploy-status?branch=main)](https://app.netlify.com/sites/ppegen/deploys) | https://ppegen.netlify.app/
 
 
 
