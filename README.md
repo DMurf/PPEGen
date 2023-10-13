@@ -1,6 +1,26 @@
+---
+title: "NCHNAP795 - AE2 - Summative 2"
+subtitle: "Advanced Software Engineering"
+date: "13 October 2023"
+subject: "Markdown"
+lang: "en-GB"
+book: true
+toc-own-page: true
+footnotes-pretty: true
+top-level-division: chapter
+colorlinks: true
+classoption: [oneside]
+table-use-row-colors: true
+listings: true
+titlepage: true
+titlepage-rule-color: "360049"
+...
+
 # Paranoia Perfect Edition Roleplaying Game - Character Generator
 
 Built for Northeastern University.
+
+Github repository available [here](https://github.com/DMurf/PPEGen)
 
 All ownership of Paranoia, Paranoia Perfect Edition, or other related assets are owned by Mongoose Publishing. 
 
@@ -71,11 +91,11 @@ The following prototype was created using [Excalidraw](https://excalidraw.com/) 
 
 On desktop view (the main focus)
 
-[Desktop plan](/assets/plan-desktop.png)
+![Desktop plan](/assets/plan-desktop.png)
 
 On mobile view 
 
-[Mobile plan](/assets/plan-mobile.png)
+![Mobile plan](/assets/plan-mobile.png)
 
 The plan for the layout will be using responsive design, with the main design being desktop-first but all elements able to resize down to a mobile-friendly view.
 
@@ -311,24 +331,32 @@ and is refreshed whenever the test command is run.
 
 #### Manual testing
 
+All built elements were manually tested to ensure their expected behaviour was occurring. 
+
 ### Non-functional
 
-#### Volume/Stress testing/Load testing
+#### Volume/Stress testing/Load testing and Accessibility
 
-#### Accessibility
+I decided to evaluate the app using [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), an open-source automated tool designed to enhance web page quality, with the goal of good user experience and to build expectations of website performance as well as ensuring meeting accessibility standards.
+
+Lighthouse returned the following result on the Live site:
+
+![Lighthouse Report](./assets/lighthouse_overview.PNG)
+
+This is acceptable given the maximum score in Accessibility and Best Practices, Performance is managed through Netlify and using it's free hosted option 99% is certainly a good result.
+
+Given the free nature of the Netlify offering, it would be unfair to perform any volume/load/stress testing on the application as this would cause undue stress on a third-party hosting service and this would be unethical. 
+
 
 ### Standards
 
 #### WCAG compliance
 
-### Security
+Running the live website through an [online Accessibility checker](https://accessibilitychecker.org/) returns the following result
 
-#### OWASP
+![Accessibility Checker](./assets/accessibilitychecker.PNG)
 
-#### Pen Test
-
-### Monitoring
-
+This check is ran against the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/) and all automated options were ran, this result is less would be ideal but the only way to improve is via a manual test. Having passed all automated checks currently, I feel this is sufficient testing.
 
 ## Documentation
 
@@ -336,6 +364,11 @@ and is refreshed whenever the test command is run.
 
 The application should follow the principal of [Don't make me think](https://sensible.com/dont-make-me-think/) however the there may be some things to clarify. 
 
+However, if this is the case:
+
+* Open the website at this [link](https://ppegen.netlify.app/)
+* Fill in all details required
+* (On windows) press ctrl+P to offer a printable view of the page to allow the saving the filled in character sheet.
 
 ### Mid-flight design changes
 
