@@ -144,7 +144,7 @@ The planning board is located [here](https://github.com/users/DMurf/projects/3) 
 
 This project uses a cut-down version of KanBan [here](https://www.developmentthatpays.com/files/DevelopmentThatPays-ScrumVsKanban-CheatSheet-1_6.pdf) and [here](https://learn.microsoft.com/en-us/devops/plan/what-is-kanban) however as there's only one member of the team, many of the ceremonies hold little-to-no value. 
 
-![Agile flow](/assets/alm_pt_agile_wit_artifacts.PNG)
+![Agile flow](/assets/agflow.PNG)
 
 ### Features
 
