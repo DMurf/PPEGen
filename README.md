@@ -262,7 +262,17 @@ There are two environments, Test and Live.
 Test is automatically updated whenever the Pull-Request process is updated. Live has a manual trigger that allows for fine-grained control over the deployment schedule.
 
 #### Scripts 
-Yaml
+
+There are two yaml scripts attached to the project. They are for test and live configurations:
+
+![Test Yaml](/assets/testyml.PNG)
+
+The test yaml script runs when a pull_request is created and runs all tests to feedback to the Pull requester, it also submits code coverage reports and SNYK vulnerability checks. Finally it attempts to deploy to the Test web environment. This is done so that if successful the application is ready to review in the testing system. If the tests or other pre-steps fail, then the deployment won't happen.
+
+![Live Yaml](/assets//liveyml.PNG)
+
+The live is a much smaller workflow and requires a manual trigger from GitHub to deploy to the live service. This is because the expectation is that other business processes will require action before a go-live decision can be made. This facilitates this feature and removes an aspect of risk, as other tests can then be performed before the application is then deployed to live.
+
 
 #### Architecture
 
@@ -328,6 +338,14 @@ This is available at
 and is refreshed whenever the test command is run.
 
 #### UI/Automated testing
+
+There is a very small Selenium IDE script file that will load the page and enter test data into all the fields to ensure they have rendered and exist.
+
+`<root>/src/tests/PPEGen.side`
+
+Selenium IDE is available [here](https://www.selenium.dev/selenium-ide/) as a browser extension, from there the .side file can be loaded in and the scripts ran. Further instructions are available [here](https://www.selenium.dev/selenium-ide/docs/en/introduction/getting-started)
+
+This form of Automated tests is the slowest possible form of Automated testing and is not often used during a rapid-development cycle, instead preferred during UAT or to allow a partial process to be tested. 
 
 #### Manual testing
 
@@ -410,6 +428,11 @@ To run the unit tests the following command can be run
 
 ## Future development
 
+I would have liked to complete more of the MVP, there are some definite holes that could not be filled. I would also like to have had more UI test coverage, I feel the coverage of components and defined logic is very well covered but there's always room for more testing. 
+
+I would have liked to have a better organised pipeline, with Semantic Versioning, and deploying of artefacts through environments not deploying code directly to live.
+
+Test Driven Development also was difficult in this application due to my inexperience with React/Typescript and only having a surface-level understanding of React-specific architecture and best-practices.
 
 ## License
 
