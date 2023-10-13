@@ -26,7 +26,7 @@ const shortTextVal = "123";
 describe("UI input", function () {
   test("is rendered", () => {
     render(<GetInput id={inputObj.id} placeholder={inputObj.placeholder} helpText={inputObj.helpText} label={inputObj.label} maxlength={inputObj.maxlength} />);
-    const inputItem = screen.getByRole("input");
+    const inputItem = screen.getByRole("textbox");
     expect(inputItem).toBeInTheDocument();
   });
 
@@ -45,7 +45,7 @@ describe("UI input", function () {
 
   test("hides help when not exists", () => {
     render(<GetInput id={emptyHelpInputObj.id} placeholder={emptyHelpInputObj.placeholder} helpText={emptyHelpInputObj.helpText} label={emptyHelpInputObj.label} maxlength={inputObj.maxlength} />);
-    const inputItem = screen.getByRole("input");
+    const inputItem = screen.getByRole("textbox");
     expect(inputItem).not.toContain("help");
   });
 

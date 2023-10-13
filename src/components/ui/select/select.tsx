@@ -18,7 +18,7 @@ function GetSelect(inputProps: selectProps){
         </label>
         <div className="control">
           <div className="select  is-fullwidth">
-            <select role="select" id={inputProps.id} name={inputProps.id}>
+            <select role="listbox" id={inputProps.id} name={inputProps.id}>
             {inputProps.customOptions.map(({ value, label }) => (
               <option key={value} value={value}>
                 {label}

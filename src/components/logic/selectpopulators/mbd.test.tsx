@@ -7,7 +7,7 @@ import '@testing-library/jest-dom'
 describe('MBD populator', function() {
     test('is rendered', ()=> {
         render(<GetMandatoryBonusDuties />);
-        const inputItem = screen.getByRole("select");
+        const inputItem = screen.getByRole("listbox");
         expect(inputItem).toBeInTheDocument();
     });
 
