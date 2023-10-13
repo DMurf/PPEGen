@@ -332,59 +332,51 @@ and is refreshed whenever the test command is run.
 
 ## Documentation
 
+## User guide
+
+The application should follow the principal of [Don't make me think](https://sensible.com/dont-make-me-think/) however the there may be some things to clarify. 
+
+
 ### Mid-flight design changes
 
 Productivity Profile changed to better fit the available space and size requirements of the fields. Also true of Secret side, and Wellness
 
-### Recreation
-
-### How-to guide
-
-
-
-
-
-
-
-
-
-
 
 # Boilerplate
 
-This is a React.js project, bootstrapped with vite - v4.4.1 configured with TypeScript
+This is a React.js project, bootstrapped with vite - v4.4.1 configured with TypeScript.
 
 
+## Technical Documentation
 
-## Getting Started
+This application uses [npm](https://docs.npmjs.com/) to install any dependancies. This is a requirement to run the application.  Instructions to install npm are available [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
+To run the application open your favourite terminal, I use PowerShell, and run the following command to ensure system readiness
 
-First, run the development server:
+`npm -v`
 
-```terminal 
-npm run dev
-```
+This app was created using 9.8.0. 
 
-Open [http://localhost:<port>](http://localhost:<port>) with your browser to see the result.
+Clone the repo locally
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+` git clone https://github.com/DMurf/PPEGen.git <location>`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Then install any dependencies
 
-## Learn More
+`npm install`
 
-To learn more about Next.js, take a look at the following resources:
+From here you can run it locally using 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`npm run dev`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This will start the application up using localhost. The terminal will give the appropriate port. This is often [http://localhost:5173](http://localhost:5173/)
 
-## Deploy on Vercel
+To run the unit tests the following command can be run
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`npm test`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Future development
+
 
 ## License
 
