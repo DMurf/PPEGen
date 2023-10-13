@@ -29,7 +29,7 @@ function App() {
                   <GetInput id="sector" placeholder="Sector" helpText="" label="Sector" maxlength={3}></GetInput>
                 </div>
                 <div className="column is-2">
-                  <GetInput id="clonenumber" placeholder="Clone" helpText="" label="Clone" maxlength={50}></GetInput>
+                  <GetInput id="clonenumber" placeholder="Clone" helpText="" label="Clone" maxlength={2}></GetInput>
                 </div>
                 <div className="column is-6">
                   <GetInput id="teamname" placeholder="Team Name" helpText="" label="Team name" maxlength={50}></GetInput>
