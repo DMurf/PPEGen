@@ -26,7 +26,7 @@ const emptyHelpInputObj:inputNumProps ={
 describe("UI input number", function () {
   test("is rendered", () => {
     render(<GetInputNumber id={inputObj.id} placeholder={inputObj.placeholder} helpText={inputObj.helpText} label={inputObj.label} maximum={inputObj.maximum} minimum={inputObj.minimum} />);
-    const inputItem = screen.getByRole("input");
+    const inputItem = screen.getByRole("textbox");
     expect(inputItem).toBeInTheDocument();
   });
 
@@ -45,7 +45,7 @@ describe("UI input number", function () {
 
   test("hides help when not exists", () => {
     render(<GetInputNumber id={emptyHelpInputObj.id} placeholder={emptyHelpInputObj.placeholder} helpText={emptyHelpInputObj.helpText} label={emptyHelpInputObj.label} maximum={inputObj.maximum} minimum={inputObj.minimum} />);
-    const inputItem = screen.getByRole("input");
+    const inputItem = screen.getByRole("textbox");
     expect(inputItem).not.toContain("help");
   });
 

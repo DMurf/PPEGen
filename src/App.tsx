@@ -186,7 +186,7 @@ function App() {
 
         <div className="container">
           <section className="section container" id="section-secret">
-            <article className="message is-danger">
+            <article className="message is-alert">
               <div className="message-header">DANGER!</div>
               <div className="message-body"> WARNING: EVERYTHING BELOW HERE IS SECRET AND COULD GET YOU VAPOURISED</div>
             </article>

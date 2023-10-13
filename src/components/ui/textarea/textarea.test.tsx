@@ -23,7 +23,7 @@ const noHelpTextAreaObj:textAreaProps ={
 describe('UI text area', function() {
     test('is rendered', ()=> {
         render(<GetTextArea id={textAreaObj.id} placeholder={textAreaObj.placeholder} helpText={textAreaObj.helpText} label={textAreaObj.label} rows={textAreaObj.rows} />);
-        const inputItem = screen.getByRole("textarea");
+        const inputItem = screen.getByRole("textbox");
         expect(inputItem).toBeInTheDocument()
     });
 
@@ -36,7 +36,7 @@ describe('UI text area', function() {
 
     test('hides help when not exists', ()=> {
         render(<GetTextArea id={noHelpTextAreaObj.id} placeholder={noHelpTextAreaObj.placeholder} helpText={noHelpTextAreaObj.helpText} label={noHelpTextAreaObj.label} rows={noHelpTextAreaObj.rows} />);
-        const inputItem = screen.getByRole("textarea");
+        const inputItem = screen.getByRole("textbox");
         expect(inputItem).not.toContain("help");
     });
 });

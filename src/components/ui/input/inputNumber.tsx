@@ -14,7 +14,7 @@ function GetInputNumber(inputProps: inputNumProps){
       {inputProps.label}
     </label>
     <div className="control">
-      <input className="input" type="number" placeholder={inputProps.placeholder} id={inputProps.id} name={inputProps.id} role="input" max={inputProps.maximum} min={inputProps.minimum}/>
+      <input className="input" type="number" placeholder={inputProps.placeholder} id={inputProps.id} name={inputProps.id} role="textbox" max={inputProps.maximum} min={inputProps.minimum}/>
     </div>
     {inputProps.helpText.length === 0 ? null : <p className="help">{inputProps.helpText}</p>}
   </div>)

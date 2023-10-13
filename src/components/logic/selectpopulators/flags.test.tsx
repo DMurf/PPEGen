@@ -7,7 +7,7 @@ import '@testing-library/jest-dom'
 describe('Flags populator', function() {
     test('is rendered', ()=> {
         render(<GetFlags />);
-        const inputItem = screen.getByRole("select");
+        const inputItem = screen.getByRole("listbox");
         expect(inputItem).toBeInTheDocument();
     });
 
