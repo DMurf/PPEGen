@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1697189231027" clover="3.2.0">
-  <project timestamp="1697189231027" name="All files">
-    <metrics statements="9" coveredstatements="9" conditionals="6" coveredconditionals="6" methods="8" coveredmethods="8" elements="23" coveredelements="23" complexity="0" loc="9" ncloc="9" packages="6" files="7" classes="7"/>
+<coverage generated="1697191692571" clover="3.2.0">
+  <project timestamp="1697191692571" name="All files">
+    <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="10" coveredmethods="10" elements="29" coveredelements="29" complexity="0" loc="13" ncloc="13" packages="6" files="9" classes="9"/>
     <package name="logic.selectpopulators">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="flags.tsx" path="C:\Development\PPEGen\src\components\logic\selectpopulators\flags.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+      </file>
       <file name="mbd.tsx" path="C:\Development\PPEGen\src\components\logic\selectpopulators\mbd.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="14" count="3" type="stmt"/>
+      </file>
+      <file name="wounds.tsx" path="C:\Development\PPEGen\src\components\logic\selectpopulators\wounds.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
       </file>
     </package>
     <package name="ui.herobanner">
@@ -39,8 +49,8 @@
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="select.tsx" path="C:\Development\PPEGen\src\components\ui\select\select.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="23" count="24" type="stmt"/>
+        <line num="14" count="10" type="stmt"/>
+        <line num="23" count="54" type="stmt"/>
       </file>
     </package>
     <package name="ui.textarea">
