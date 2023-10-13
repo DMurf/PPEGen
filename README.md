@@ -1,21 +1,3 @@
----
-title: "NCHNAP795 - AE2 - Summative 2"
-subtitle: "Advanced Software Engineering"
-date: "13 October 2023"
-subject: "Markdown"
-lang: "en-GB"
-book: true
-toc-own-page: true
-footnotes-pretty: true
-top-level-division: chapter
-colorlinks: true
-classoption: [oneside]
-table-use-row-colors: true
-listings: true
-titlepage: true
-titlepage-rule-color: "360049"
-...
-
 # Paranoia Perfect Edition Roleplaying Game - Character Generator
 
 Built for Northeastern University.
@@ -23,16 +5,6 @@ Built for Northeastern University.
 Github repository available [here](https://github.com/DMurf/PPEGen)
 
 All ownership of Paranoia, Paranoia Perfect Edition, or other related assets are owned by Mongoose Publishing. 
-
-| | Badge | ENV |
-| --- | --- | --- |
-| Code Cov | [![codecov](https://codecov.io/gh/DMurf/PPEGen/graph/badge.svg?token=XSRB9S84OD)](https://codecov.io/gh/DMurf/PPEGen) |
-| SNYK | ![Known Vulnerabilities](https://snyk.io/test/github/dmurf/PPEGEN/badge.svg) |
-| TEST ENV | [![Netlify Status](https://api.netlify.com/api/v1/badges/7e13be0d-1830-4d9a-8139-2e40f89338e6/deploy-status?branch=main)](https://app.netlify.com/sites/ppegen-test/deploys) | https://ppegen-test.netlify.app/
-| LIVE ENC | [![Netlify Status](https://api.netlify.com/api/v1/badges/3747878d-2c7c-4371-85fe-aeff6ff1c456/deploy-status?branch=main)](https://app.netlify.com/sites/ppegen/deploys) | https://ppegen.netlify.app/
-
-
-
 
 ## Proposition
 
@@ -43,7 +15,7 @@ A nice bit of escapism for a team is pretending to be somewhere else and attempt
 
 ### Existing game
 
-![Paranoia PPE Logo](/assets/logo.png "Paranoia PPE logo")
+![Paranoia PPE Logo](assets/logo.png "Paranoia PPE logo")
 
 "Paranoia" is a tabletop role-playing game (RPG) known for its satirical and darkly comedic take on a dystopian future. Over the years, there have been several editions of the game, each with its own unique features and updates. Here's a brief summary of each version:
 
@@ -80,7 +52,7 @@ Each edition maintains the core theme of a dystopian future controlled by an ins
 
 ## Foundation
 
-The application will be based off the existing character sheet available on the Mongoose Publishing website [Downloads](https://www.mongoosepublishing.com/pages/downloads-htm) and also a backup [locally](/assets/ParanoiaCharSheet.pdf)
+The application will be based off the existing character sheet available on the Mongoose Publishing website [Downloads](https://www.mongoosepublishing.com/pages/downloads-htm) and also a backup [locally](assets/ParanoiaCharSheet.pdf)
 
 
 ## Design
@@ -91,11 +63,11 @@ The following prototype was created using [Excalidraw](https://excalidraw.com/) 
 
 On desktop view (the main focus)
 
-![Desktop plan](/assets/plan-desktop.png)
+![Desktop plan](assets/plan-desktop.png)
 
 On mobile view 
 
-![Mobile plan](/assets/plan-mobile.png)
+![Mobile plan](assets/plan-mobile.png)
 
 The plan for the layout will be using responsive design, with the main design being desktop-first but all elements able to resize down to a mobile-friendly view.
 
@@ -137,14 +109,14 @@ The following fonts are used from Google Fonts, under the SIL OPEN FONT LICENSE 
 
 The planning board is located [here](https://github.com/users/DMurf/projects/3) and is setup using the GitHub project template "Team Backlog". This is setup as a KanBan board.
 
-![Project board](/assets/projectboard.PNG)
+![Project board](assets/projectboard.PNG)
 
 ### Agile methodology
 
 
 This project uses a cut-down version of KanBan [here](https://www.developmentthatpays.com/files/DevelopmentThatPays-ScrumVsKanban-CheatSheet-1_6.pdf) and [here](https://learn.microsoft.com/en-us/devops/plan/what-is-kanban) however as there's only one member of the team, many of the ceremonies hold little-to-no value. 
 
-![Agile flow](/assets/agflow.PNG)
+![Agile flow](assets/agflow.PNG)
 
 ### Features
 
@@ -185,7 +157,7 @@ Acceptance criteria are often in the form of "Given, When, Then" or [Gherkin](ht
 * Then all free-text fields should have text entered
 
 ### Ticket example
-![Agile story](./assets/AgileStory.png)
+![Agile story](assets/AgileStory.png)
 
 ### MVP
 
@@ -224,7 +196,7 @@ This app uses the following technologies
 
 This project utilises Continuous Delivery 
 
-![CI vs CD vs CD](/assets/CICDCDwebp.webp)
+![CI vs CD vs CD](assets/CICDCDwebp.png)
 
 Image from [here](https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450)
 
@@ -265,11 +237,11 @@ Test is automatically updated whenever the Pull-Request process is updated. Live
 
 There are two yaml scripts attached to the project. They are for test and live configurations:
 
-![Test Yaml](/assets/testyml.PNG)
+![Test Yaml](assets/testyml.PNG)
 
 The test yaml script runs when a pull_request is created and runs all tests to feedback to the Pull requester, it also submits code coverage reports and SNYK vulnerability checks. Finally it attempts to deploy to the Test web environment. This is done so that if successful the application is ready to review in the testing system. If the tests or other pre-steps fail, then the deployment won't happen.
 
-![Live Yaml](/assets//liveyml.PNG)
+![Live Yaml](assets//liveyml.PNG)
 
 The live is a much smaller workflow and requires a manual trigger from GitHub to deploy to the live service. This is because the expectation is that other business processes will require action before a go-live decision can be made. This facilitates this feature and removes an aspect of risk, as other tests can then be performed before the application is then deployed to live.
 
@@ -329,7 +301,7 @@ All files               |     100 |      100 |     100 |     100 |
 
 Also using the code coverage output results in the following website being made available
 
-![Code Coverage Report](./assets/codecovoutput.PNG)
+![Code Coverage Report](assets/codecovoutput.PNG)
 
 This is available at 
 
@@ -359,7 +331,7 @@ I decided to evaluate the app using [Lighthouse](https://developer.chrome.com/do
 
 Lighthouse returned the following result on the Live site:
 
-![Lighthouse Report](./assets/lighthouse_overview.PNG)
+![Lighthouse Report](assets/lighthouse_overview.PNG)
 
 This is acceptable given the maximum score in Accessibility and Best Practices, Performance is managed through Netlify and using it's free hosted option 99% is certainly a good result.
 
@@ -372,7 +344,7 @@ Given the free nature of the Netlify offering, it would be unfair to perform any
 
 Running the live website through an [online Accessibility checker](https://accessibilitychecker.org/) returns the following result
 
-![Accessibility Checker](./assets/accessibilitychecker.PNG)
+![Accessibility Checker](assets/accessibilitychecker.PNG)
 
 This check is ran against the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/) and all automated options were ran, this result is less would be ideal but the only way to improve is via a manual test. Having passed all automated checks currently, I feel this is sufficient testing.
 
