@@ -83,29 +83,52 @@ The plan for the layout will be using responsive design, with the main design be
 
 The intention is to make a design that fits with the aesthetic of the character sheet whilst also ensuring compliance with best practices and standards. 
 
+#### Theme
+
+The CSS theme used is a custom version of [Lux](https://jenil.github.io/bulmaswatch/lux/) which itself in an implementation of [Bulma](https://bulma.io/) css framwork. Lux uses scss overrides to style Bulma, and on top of this I have tweaked the theme to fit the required aesthetic. The output of this is in the following folder:
+
+` <root>/styles/lux` 
+
+The key files are 
+
+`<root>/styles/lux/_overrides.scss`
+
+`<root>/styles/lux/_variables_.scss`
+
+These are them compiled into 
+
+`<root>/styles/lux/bulmaswatch.css`
+
+More information on this process is available at the [Bulma website](https://bulma.io/documentation/customize/with-node-sass/)
+
+Additionally some tweaks or additional styling is available in 
+
+`<root>/src/App.css`
+
 #### Fonts
 
-The following fonts will be used from Google Fonts, under the SIL OPEN FONT LICENSE Version 1.1:
+The following fonts are used from Google Fonts, under the SIL OPEN FONT LICENSE Version 1.1:
 * Inter by Rasmus Andersson
 * Bebas Neue by Ryoichi Tsunekawa
 * Courier Prime by Alan Dague-Greene
 
-#### CSS themes
-
-The [Bulma](https://bulma.io/) css framework will be used. With a modified version of [Bulmaswatch Lux](https://github.com/jenil/bulmaswatch/tree/gh-pages/lux) for theming.
 
 ## Planning
 
 The planning board is located [here](https://github.com/users/DMurf/projects/3) and is setup using the GitHub project template "Team Backlog". This is setup as a KanBan board.
 
+![Project board](/assets/projectboard.PNG)
+
 ### Agile methodology
 
 
-This project will use a cut-down version of KanBan [here](https://www.developmentthatpays.com/files/DevelopmentThatPays-ScrumVsKanban-CheatSheet-1_6.pdf) and [here](https://learn.microsoft.com/en-us/devops/plan/what-is-kanban) however as there's only one member of the team, many of the ceremonies hold little-to-no value. 
+This project uses a cut-down version of KanBan [here](https://www.developmentthatpays.com/files/DevelopmentThatPays-ScrumVsKanban-CheatSheet-1_6.pdf) and [here](https://learn.microsoft.com/en-us/devops/plan/what-is-kanban) however as there's only one member of the team, many of the ceremonies hold little-to-no value. 
+
+![Agile flow](/assets/alm_pt_agile_wit_artifacts.PNG)
 
 ### Features
 
-Features are the definition of a deliverable in this application, something that is marketable or demonstrable to a user such as "This button saves the picture to your computer" or "Styling UI to fit corporate theme". The principle behind features is the [**Minimum Marketable Feature**] (https://www.techtarget.com/whatis/definition/minimum-marketable-feature-MMF), where each feature is delivered because of value to either the business or users.
+Features are the definition of a deliverable in this application, something that is marketable or demonstrable to a user such as "This button saves the picture to your computer" or "Styling UI to fit corporate theme". The principle behind features is the [Minimum Marketable Feature](https://www.techtarget.com/whatis/definition/minimum-marketable-feature-MMF), where each feature is delivered because of value to either the business or users.
 
 ### User stories
 
@@ -113,9 +136,11 @@ User stories are tickets below Features, and following the Extreme Programming d
 
 * As a <role> I want to <verb-centric behaviour> so that <user value added>
 
-Each user story will be assigned an estimated ticket size, this is based on fibonacci (1, 2, 3, 5, 8, 13) and this signifies the relative complexity of each ticket. 
+This pattern is originally from Extreme Programming (XP) [more information available here](https://martinfowler.com/bliki/UserStory.html)
 
-A user story is intended to be the placeholder of a conversation, and should not be overly proscribed.
+Each user story will be assigned an estimated ticket size, this is based on fibonacci (1, 2, 3, 5, 8, 13...) and this signifies the relative complexity of each ticket. 
+
+A user story is intended to be the placeholder of a conversation, and should not be overly proscribed. In this project, the user story should contain most of the details to implement the requirement.
 
 ### Definition of ready
 
@@ -133,11 +158,14 @@ Additionally a User Story would ideally be peer-reviewed by another developer.
 
 ### Acceptance criteria
 
-Acceptance criteria are often in the form of "Given, When, Then" format such as 
+Acceptance criteria are often in the form of "Given, When, Then" or [Gherkin](https://www.guru99.com/gherkin-test-cucumber.html) format such as 
 
 * Given I navigate to the home page
 * When I click on the randomise button
 * Then all free-text fields should have text entered
+
+### Ticket example
+![Agile story](./assets/AgileStory.png)
 
 ### MVP
 
@@ -155,9 +183,53 @@ The Minimum Viable Product for the PPEGen would follow the following:
 
 ## Building
 
-### DevLog + SemVer releases
+### Technology stack
+
+This app uses the following technologies
+
+* [HTML](https://devdocs.io/html/)
+* [CSS](https://devdocs.io/css/)
+    * [Sass](https://devdocs.io/sass/)
+* [Javascript](https://devdocs.io/javascript/) / [Typescript](https://www.typescriptlang.org/)
+* [React](https://react.dev/)
+* [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+* [Jest](https://jestjs.io/)
+* [GitHub](https://github.com/)
+* [Netlify](https://www.netlify.com/)
+* [Codecov](https://about.codecov.io/)
+* [SNYK](https://snyk.io/)
+* [Vite](https://vitejs.dev/)
 
 ### DevOps / CI-CD pipelines
+
+This project utilises Continuous Delivery 
+
+![CI vs CD vs CD](/assets/CICDCDwebp.webp)
+
+Image from [here](https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450)
+
+#### Continuous Integration
+
+Continuous Integration (CI) involves building and unit-testing the code changes immediately after the
+developer checks it in, thus enabling the newly incorporated changes to be continually tested. The
+main idea behind this practice is to test the code frequently as the development process proceeds, so
+that possible issues are identified and rectified early.
+
+#### Continuous Delivery 
+
+Continuous delivery is an extension of CI. In this process, developed code is continuously delivered as
+soon as the developer deems it ready for being shipped. It involves continuous integration, testing
+automation and deployment automation processes, which enable rapid and reliable development
+and delivery of software with the least manual overhead. The core idea is to deliver the code to QA,
+customers, or any user base so that it can be constantly and regularly reviewed
+
+#### Continuous Deployment
+
+Continuous Deployment is the next logical step after continuous delivery. It is the process of
+deploying the code directly to the production stage as soon as it is developed. In CD, all the changes
+that pass the automated tests are automatically deployed to the production stage.
+
+Dave Farley of [Continuous-Delivery.co.uk](https://www.continuous-delivery.co.uk/) wrote the book on CD, more information is available there.
 
 #### Branch policy
 
@@ -165,12 +237,16 @@ The main branch is protected to disallow direct pushes without a Pull Request.
 
 #### Environments
 
-Test / Live
+There are two environments, Test and Live.
+
+Test is automatically updated whenever the Pull-Request process is updated. Live has a manual trigger that allows for fine-grained control over the deployment schedule.
 
 #### Scripts 
-Yaml/Powershell
+Yaml
 
 #### Architecture
+
+The application is a Single-Page Application (SPA) rendered using [React.js](https://react.dev/). The core of the application is inside the /src/ folder. In there are the /components/ which comprises of any /logic/ - processes or translation of data/text/content and /ui/ where each bulma component is wrapped into an object. All these have .test. files adjacent. These files are all then referenced in /src/App.tsx which itself is called via /src/main.tsx.
 
 ## Testing
 
@@ -184,6 +260,52 @@ Libraries used:
 * user-event 
 
 #### Unit testing
+
+Unit testing is a crucial practice in software development that involves testing individual units or components of code to ensure their correctness and functionality in isolation. These units typically correspond to specific functions, methods, or classes within a software application. This process allows for the code or components to be built in isolation, and also tested in isolation. This increases the speed of building and lowers complexity of change. The Unit tests are also designed to provide rapid feedback to their user to enable fast-fixing of problems and increase confidence of any changes made to the application.
+
+For this project, Jest is the main unit testing library and running the command
+
+`npm test`
+
+Will run all the tests that Jest is aware of and output reports as configured. In the terminal they look similar to:
+
+
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+------------------------|---------|----------|---------|---------|-------------------
+All files               |     100 |      100 |     100 |     100 |                   
+ logic/selectpopulators |     100 |      100 |     100 |     100 |                   
+  flags.tsx             |     100 |      100 |     100 |     100 |                   
+  mbd.tsx               |     100 |      100 |     100 |     100 |                   
+  mutantpowers.tsx      |     100 |      100 |     100 |     100 |                   
+  secretsocieties.tsx   |     100 |      100 |     100 |     100 |                   
+  wounds.tsx            |     100 |      100 |     100 |     100 | 
+ ui/herobanner          |     100 |      100 |     100 |     100 | 
+  hero.tsx              |     100 |      100 |     100 |     100 | 
+ ui/input               |     100 |      100 |     100 |     100 | 
+  input.tsx             |     100 |      100 |     100 |     100 | 
+  inputNumber.tsx       |     100 |      100 |     100 |     100 | 
+ ui/navbarheader        |     100 |      100 |     100 |     100 | 
+  navbar.tsx            |     100 |      100 |     100 |     100 | 
+ ui/select              |     100 |      100 |     100 |     100 | 
+  select.tsx            |     100 |      100 |     100 |     100 | 
+ ui/textarea            |     100 |      100 |     100 |     100 | 
+  textarea.tsx          |     100 |      100 |     100 |     100 | 
+
+
+* Test Suites: 11 passed, 11 total
+* Tests:       34 passed, 34 total
+* Snapshots:   0 total
+* Time:        4.836 s
+
+Also using the code coverage output results in the following website being made available
+
+![Code Coverage Report](./assets/codecovoutput.PNG)
+
+This is available at 
+
+`<root>/coverage/lcov-report/index.html`
+
+and is refreshed whenever the test command is run.
 
 #### UI/Automated testing
 
@@ -218,9 +340,7 @@ Productivity Profile changed to better fit the available space and size requirem
 
 ### How-to guide
 
-## License
 
-MIT
 
 
 
@@ -266,3 +386,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+## License
+
+MIT
