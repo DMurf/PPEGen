@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for navbar/navbar.tsx</title>
+    <title>Code coverage report for src/App.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">navbar</a> navbar.tsx</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> App.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/1</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/1</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -121,15 +121,17 @@
 <a name='L56'></a><a href='#L56'>56</a>
 <a name='L57'></a><a href='#L57'>57</a>
 <a name='L58'></a><a href='#L58'>58</a>
-<a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a>
-<a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L59'></a><a href='#L59'>59</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -177,95 +179,72 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">function GetHeader(){
-    return (
-        &lt;&gt;
-        &lt;nav className="navbar is-danger" role="navigation" aria-label="main navigation"&gt;
-  &lt;div className="navbar-brand"&gt;
-    PPE:Gen
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import './App.css'
+import GetHeader from './components/ui/navbar/navbar'
+import GetHero from './components/ui/hero/hero'
+import GetInput from './components/ui/input/input'
+import GetTextArea from './components/ui/textarea/textarea'
+import GetMandatoryBonusDuties from './components/logic/selectpopulators/mbd'
 &nbsp;
-    &lt;a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"&gt;
-      &lt;span aria-hidden="true"&gt;&lt;/span&gt;
-      &lt;span aria-hidden="true"&gt;&lt;/span&gt;
-      &lt;span aria-hidden="true"&gt;&lt;/span&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
+function <span class="fstat-no" title="function not covered" >App(</span>) {
+<span class="cstat-no" title="statement not covered" >    return (</span>
+      &lt;div className="App"&gt;
+        &lt;GetHeader /&gt;
+        &lt;GetHero /&gt;
+        &lt;section className="section container" id="section-PII"&gt;
+          &lt;h1 className="container title"&gt;PII (Personally Identifiable Information)&lt;/h1&gt;
+          &lt;h2 className="container subtitle"&gt;Personally Identifiable Information&lt;/h2&gt;
 &nbsp;
-  &lt;div id="navbarBasicExample" className="navbar-menu"&gt;
-    &lt;div className="navbar-start"&gt;
-      &lt;a className="navbar-item"&gt;
-        Home
-      &lt;/a&gt;
+          &lt;div className="columns"&gt;
+            &lt;div className="column is-6"&gt;
+              &lt;div className="columns is-multiline"&gt;
+                &lt;div className="column is-6"&gt;
+                  &lt;GetInput id="charactername" placeholder="Character name" helpText="" label="Name"&gt;&lt;/GetInput&gt;
+                &lt;/div&gt;
+                &lt;div className="column is-2"&gt;
+                  &lt;GetInput id="clearance" placeholder="Red" helpText="" label="Clearance"&gt;&lt;/GetInput&gt;
+                &lt;/div&gt;
+                &lt;div className="column is-2"&gt;
+                  &lt;GetInput id="sector" placeholder="Sector" helpText="" label="Sector"&gt;&lt;/GetInput&gt;
+                &lt;/div&gt;
+                &lt;div className="column is-2"&gt;
+                  &lt;GetInput id="clonenumber" placeholder="Clone" helpText="" label="Clone"&gt;&lt;/GetInput&gt;
+                &lt;/div&gt;
+                &lt;div className="column is-6"&gt;
+                  &lt;GetInput id="teamname" placeholder="Team Name" helpText="" label="Team name"&gt;&lt;/GetInput&gt;
+                &lt;/div&gt;
+                &lt;div className="column is-6"&gt;
+                  &lt;GetMandatoryBonusDuties&gt;&lt;/GetMandatoryBonusDuties&gt;
+                &lt;/div&gt;
 &nbsp;
-      &lt;a className="navbar-item"&gt;
-        Documentation
-      &lt;/a&gt;
-&nbsp;
-      &lt;div className="navbar-item has-dropdown is-hoverable"&gt;
-        &lt;a className="navbar-link"&gt;
-          More
-        &lt;/a&gt;
-&nbsp;
-        &lt;div className="navbar-dropdown"&gt;
-          &lt;a className="navbar-item"&gt;
-            About
-          &lt;/a&gt;
-          &lt;a className="navbar-item"&gt;
-            Jobs
-          &lt;/a&gt;
-          &lt;a className="navbar-item"&gt;
-            Contact
-          &lt;/a&gt;
-          &lt;hr className="navbar-divider" /&gt;
-          &lt;a className="navbar-item"&gt;
-            Report an issue
-          &lt;/a&gt;
-        &lt;/div&gt;
+                &lt;div className="column is-6"&gt;
+                &lt;GetTextArea id="treasonbutton" placeholder="Treasonous content!" helpText="" label="Treason button" rows={5}&gt;&lt;/GetTextArea&gt;
+            &lt;/div&gt;
+            &lt;div className="column is-6"&gt;
+              &lt;GetTextArea id="voilencebutton" placeholder="Violence button" helpText="" label="Violence button" rows={5}&gt;&lt;/GetTextArea&gt;
+            &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div className="column is-6"&gt;
+              &lt;GetTextArea id="servicegroup" placeholder="Service group" helpText="" label="Service group" rows={13}&gt;&lt;/GetTextArea&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-&nbsp;
-    &lt;div className="navbar-end"&gt;
-      &lt;div className="navbar-item"&gt;
-        &lt;div className="buttons"&gt;
-          &lt;a className="button is-primary"&gt;
-            &lt;strong&gt;Sign up&lt;/strong&gt;
-          &lt;/a&gt;
-          &lt;a className="button is-light"&gt;
-            Log in
-          &lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;
-        &lt;/&gt;
-    )
+    );
 }
 &nbsp;
-export default GetHeader;</pre></td></tr></table></pre>
+export default App
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-10-12T23:33:04.798Z
+                at 2023-10-12T23:29:57.114Z
             </div>
         <script src="../prettify.js"></script>
         <script>
