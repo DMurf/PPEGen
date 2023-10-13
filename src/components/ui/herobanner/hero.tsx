@@ -16,8 +16,8 @@ function GetHero(){
           <li><a href="#section-PII">PII</a></li>
           <li><a href="#section-PP">Productivity Profile</a></li>
           <li><a href="#section-wellness">Wellness</a></li>
-          <li><a href="'section-mission">Mission</a></li>
-          <li><a href="'section-secret">Secret side</a></li>
+          <li><a href="#section-mission">Mission</a></li>
+          <li><a href="#section-secret">Secret side</a></li>
         </ul>
       </div>
   </div>

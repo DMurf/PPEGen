@@ -1,0 +1,8 @@
+.hazard {
+    color: white;
+    background: repeating-linear-gradient(-45deg,
+            #000,
+            #000 20px,
+            #FFFF00 20px,
+            #FFFF00 40px);
+}
