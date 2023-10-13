@@ -176,6 +176,13 @@ Yaml/Powershell
 
 ### Functional
 
+Libraries used:
+
+* jest
+* jest-dom
+* react-testing-library
+* user-event 
+
 #### Unit testing
 
 #### UI/Automated testing

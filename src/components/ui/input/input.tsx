@@ -2,9 +2,9 @@ export interface inputProps{
     id: string;
     placeholder:string;
     helpText:string;
-    label:string
+    label:string,
+    maxlength:number
 }
-
 
 function GetInput(inputProps: inputProps){
     return(
@@ -13,7 +13,7 @@ function GetInput(inputProps: inputProps){
       {inputProps.label}
     </label>
     <div className="control">
-      <input className="input" type="text" placeholder={inputProps.placeholder} id={inputProps.id} name={inputProps.id} role="input"/>
+      <input className="input" type="text" placeholder={inputProps.placeholder} id={inputProps.id} name={inputProps.id} role="input" maxLength={inputProps.maxlength}/>
     </div>
     {inputProps.helpText.length === 0 ? null : <p className="help">{inputProps.helpText}</p>}
   </div>)

@@ -20,30 +20,29 @@ function App() {
             <div className="column is-6">
               <div className="columns is-multiline">
                 <div className="column is-6">
-                  <GetInput id="charactername" placeholder="Character name" helpText="" label="Name"></GetInput>
+                  <GetInput id="charactername" placeholder="Character name" helpText="" label="Name" maxlength={50}></GetInput>
                 </div>
                 <div className="column is-2">
-                  <GetInput id="clearance" placeholder="Red" helpText="" label="Clearance"></GetInput>
+                  <GetInput id="clearance" placeholder="Red" helpText="" label="Clearance" maxlength={1}></GetInput>
                 </div>
                 <div className="column is-2">
-                  <GetInput id="sector" placeholder="Sector" helpText="" label="Sector"></GetInput>
+                  <GetInput id="sector" placeholder="Sector" helpText="" label="Sector" maxlength={3}></GetInput>
                 </div>
                 <div className="column is-2">
-                  <GetInput id="clonenumber" placeholder="Clone" helpText="" label="Clone"></GetInput>
+                  <GetInput id="clonenumber" placeholder="Clone" helpText="" label="Clone" maxlength={50}></GetInput>
                 </div>
                 <div className="column is-6">
-                  <GetInput id="teamname" placeholder="Team Name" helpText="" label="Team name"></GetInput>
+                  <GetInput id="teamname" placeholder="Team Name" helpText="" label="Team name" maxlength={50}></GetInput>
                 </div>
                 <div className="column is-6">
                   <GetMandatoryBonusDuties></GetMandatoryBonusDuties>
                 </div>
-
                 <div className="column is-6">
-                <GetTextArea id="treasonbutton" placeholder="Treasonous content!" helpText="" label="Treason button" rows={5}></GetTextArea>
-            </div>
-            <div className="column is-6">
-              <GetTextArea id="voilencebutton" placeholder="Violence button" helpText="" label="Violence button" rows={5}></GetTextArea>
-            </div>
+                  <GetTextArea id="treasonbutton" placeholder="Treasonous content!" helpText="" label="Treason button" rows={5}></GetTextArea>
+                </div>
+                <div className="column is-6">
+                  <GetTextArea id="voilencebutton" placeholder="Violence button" helpText="" label="Violence button" rows={5}></GetTextArea>
+                </div>
               </div>
             </div>
             <div className="column is-6">
