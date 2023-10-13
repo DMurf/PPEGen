@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for ui/herobanner/hero.tsx</title>
+    <title>Code coverage report for logic/selectpopulators/mutantpowers.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">ui/herobanner</a> hero.tsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">logic/selectpopulators</a> mutantpowers.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
@@ -90,8 +90,8 @@
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -113,41 +113,38 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">function GetHero(){
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import GetSelect, { selectKeyValue, selectProps } from "../../ui/select/select";
+&nbsp;
+let powerList :selectKeyValue[]= [
+    { label:"-- Select one --", value:""},
+    { label:"Adrenalin Control", value:"adrenalincontrol"},
+    { label:"Clone Empathy", value:"clone empathy"},
+    { label:"Corrode", value:"corrode"},
+    { label:"Cryokinesis", value:"cryokinesis"},
+    { label:"Electroshock", value:"electroshock"},
+    { label:"Force Field", value:"force field"},
+    { label:"Hypersenses", value:"hypersenses"},
+    { label:"Invisibility", value:"invisibility"},
+    { label:"Levitation", value:"levitation"},
+    { label:"Machine Empathy", value:"machineempathy"},
+    { label:"Mental Blast", value:"mental blast"},
+    { label:"Pyrokinesis", value:"pyrokinesis"},
+    { label:"Telekinesis", value:"telekinesis"},
+    { label:"Telepathy", value:"telepathy"},
+    { label:"Teleport", value:"teleport"},
+    { label:"X-ray Vision", value:"x-ray vision"}  
+]
+&nbsp;
+function GetMutantPowers(){
     return (
-        &lt;&gt;
-&lt;section className="hero is-danger"&gt;
-  &lt;div className="hero-body container"&gt;
-    &lt;h1 className="title"&gt;
-    Paranoia Perfect Edition
-    &lt;/h1&gt;
-    &lt;h2 className="subtitle"&gt;
-    Character Generator
-    &lt;/h2&gt;
-  &lt;/div&gt;
-  &lt;div className="hero-foot"&gt;
-      &lt;div className="tabs is-centered"&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href="#section-PII"&gt;PII&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#section-PP"&gt;Productivity Profile&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#section-wellness"&gt;Wellness&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#section-mission"&gt;Mission&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#section-secret"&gt;Secret side&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;   
-        &lt;/&gt;
+        &lt;GetSelect id={"mutantpower"} label={"Mutant Power"} customOptions={powerList} &gt;&lt;/GetSelect&gt;
     )
 }
-&nbsp;
-export default GetHero;</pre></td></tr></table></pre>
+export default GetMutantPowers;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

@@ -9,6 +9,8 @@ import GetMandatoryBonusDuties from './components/logic/selectpopulators/mbd'
 import GetInputNumber from './components/ui/input/inputNumber'
 import GetWounds from './components/logic/selectpopulators/wounds'
 import GetFlags from './components/logic/selectpopulators/flags'
+import GetSecretSocieties from './components/logic/selectpopulators/secretsocieties'
+import GetMutantPowers from './components/logic/selectpopulators/mutantpowers'
 
 function App() {
     return (
@@ -168,13 +170,61 @@ function App() {
 
           <section className="section container" id="section-mission">
             <h1 className="container title">Mission/Role in society</h1>
-            <h2 className="container subtitle">Alpha Complex, we've had a problem.</h2>
+            <h2 className="container subtitle">Alpha Complex, we've had a problem</h2>
             <div className="columns">
               <div className="column">
                 <GetTextArea id="missionobjectives" placeholder="The best laid plans of clones and droids" helpText="" label="Mission objectives" rows={20}></GetTextArea>
               </div>
               <div className="column">
                 <GetTextArea id="assignedgear" placeholder="- A level of optimism surpassed only by a dog with a squeaky toy" helpText="" label="Assigned Gear" rows={20}></GetTextArea>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <article className="notification  hazard pb-6"></article>
+
+        <div className="container">
+          <section className="section container" id="section-secret">
+            <article className="message is-danger">
+              <div className="message-header">DANGER!</div>
+              <div className="message-body"> WARNING: EVERYTHING BELOW HERE IS SECRET AND COULD GET YOU VAPOURISED</div>
+            </article>
+
+            <h1 className="container title">Secret Side</h1>
+            <h2 className="container subtitle">If you want to keep a secret, you must also hide it from yourself</h2>
+            <div className="columns">
+              <div className="column">
+                <div className="columns  is-multiline">
+                  <div className="column is-6">
+                    <GetSecretSocieties></GetSecretSocieties>
+                  </div>
+                  <div className="column is-6">
+                    <GetMutantPowers></GetMutantPowers>
+                  </div>
+                  <div className="column is-12">
+                    <GetTextArea id="secretobjectives" placeholder="Sneaky sneaky plans" helpText="" label="Secret Objectives" rows={5}></GetTextArea>
+                  </div>
+                  <div className="column is-12">
+                    <GetTextArea id="servicegroupfavours" placeholder="Rewards for being helpful" helpText="" label="Service Group Favours" rows={5}></GetTextArea>
+                  </div>
+                  <div className="column is-12">
+                    <GetTextArea id="secretsocietyfavours" placeholder="Rewards for being naughty" helpText="" label="Secret Society Favours" rows={5}></GetTextArea>
+                  </div>
+                </div>
+              </div>
+              <div className="column">
+                <div className="columns  is-multiline">
+                  <div className="column is-12">
+                    <GetTextArea id="treasonousgear" placeholder="1 pamphlet containing cheat codes" helpText="" label="Treasonous Gear" rows={7}></GetTextArea>
+                  </div>
+                  <div className="column is-12">
+                    <GetTextArea id="evidence" placeholder="I saw John-R-WOO poking a service droid with a stick" helpText="" label="Evidence" rows={7}></GetTextArea>
+                  </div>
+                  <div className="column is-12">
+                    <GetTextArea id="secretnotes" placeholder="Jimmy-o-TOO's eyes are blue, hmmm?" helpText="" label="Secret Notes" rows={7}></GetTextArea>
+                  </div>
+                </div>
               </div>
             </div>
           </section>

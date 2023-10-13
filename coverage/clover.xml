@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1697191692571" clover="3.2.0">
-  <project timestamp="1697191692571" name="All files">
-    <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="10" coveredmethods="10" elements="29" coveredelements="29" complexity="0" loc="13" ncloc="13" packages="6" files="9" classes="9"/>
+<coverage generated="1697195583600" clover="3.2.0">
+  <project timestamp="1697195583600" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="12" elements="35" coveredelements="35" complexity="0" loc="17" ncloc="17" packages="6" files="11" classes="11"/>
     <package name="logic.selectpopulators">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
       <file name="flags.tsx" path="C:\Development\PPEGen\src\components\logic\selectpopulators\flags.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
@@ -13,6 +13,16 @@
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="14" count="3" type="stmt"/>
+      </file>
+      <file name="mutantpowers.tsx" path="C:\Development\PPEGen\src\components\logic\selectpopulators\mutantpowers.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+      </file>
+      <file name="secretsocieties.tsx" path="C:\Development\PPEGen\src\components\logic\selectpopulators\secretsocieties.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
       </file>
       <file name="wounds.tsx" path="C:\Development\PPEGen\src\components\logic\selectpopulators\wounds.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -49,8 +59,8 @@
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="select.tsx" path="C:\Development\PPEGen\src\components\ui\select\select.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="14" count="10" type="stmt"/>
-        <line num="23" count="54" type="stmt"/>
+        <line num="14" count="16" type="stmt"/>
+        <line num="23" count="141" type="stmt"/>
       </file>
     </package>
     <package name="ui.textarea">

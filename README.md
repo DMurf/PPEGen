@@ -212,7 +212,7 @@ Libraries used:
 
 ### Mid-flight design changes
 
-Productivity Profile changed to better fit the available space and size requirements of the fields. 
+Productivity Profile changed to better fit the available space and size requirements of the fields. Also true of Secret side, and Wellness
 
 ### Recreation
 
