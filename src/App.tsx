@@ -7,16 +7,18 @@ import GetInput from './components/ui/input/input'
 import GetTextArea from './components/ui/textarea/textarea'
 import GetMandatoryBonusDuties from './components/logic/selectpopulators/mbd'
 import GetInputNumber from './components/ui/input/inputNumber'
+import GetWounds from './components/logic/selectpopulators/wounds'
+import GetFlags from './components/logic/selectpopulators/flags'
 
 function App() {
     return (
       <div className="App">
         <GetHeader />
         <GetHero />
+        <div className='container'>
         <section className="section container" id="section-PII">
           <h1 className="container title">PII (Personally Identifiable Information)</h1>
-          <h2 className="container subtitle">Personally Identifiable Information</h2>
-
+          <h2 className="container subtitle">It's all about you</h2>
           <div className="columns">
             <div className="column is-6">
               <div className="columns is-multiline">
@@ -54,6 +56,7 @@ function App() {
 
         <section className="section container" id="section-PP">
           <h1 className="container title">Productivity Profile</h1>
+          <h2 className="container subtitle">Excellence is not a skill, it's an attitude</h2>
           <div className="columns is-multiline">
             <div className="column">
               <div className="columns is-mobile">
@@ -73,8 +76,7 @@ function App() {
                     </div>
                     <div className="column is-6">
                       <GetInputNumber id="science" placeholder="Science" helpText="" label="Science" maximum={5} minimum={-5}></GetInputNumber>
-                      <div className='is-hidden-desktop pb-6'>
-                </div>
+                      <div className="is-hidden-desktop pb-6"></div>
                     </div>
                   </div>
                 </div>
@@ -144,6 +146,26 @@ function App() {
             </div>
           </div>
         </section>
+
+        <section className="section container" id="section-wellness">
+          <h1 className="container title">Wellness</h1>
+          <h2 className="container subtitle">Get busy living, or get busy dying</h2>
+          <div className="columns">
+            <div className="column is-3">
+              <GetWounds></GetWounds>
+            </div>
+            <div className="column is-3">
+              <GetFlags></GetFlags>
+            </div>
+            <div className="column is-3">
+              <GetInputNumber id="xp" placeholder="XP" helpText="" label="XP" maximum={1000000} minimum={-1000000}></GetInputNumber>
+            </div>
+            <div className="column is-3">
+              <GetInputNumber id="moxie" placeholder="Moxie" helpText="" label="Moxie" maximum={8} minimum={1}></GetInputNumber>
+            </div>
+          </div>
+        </section>
+        </div>
       </div>
     );
 }
