@@ -210,6 +210,10 @@ Libraries used:
 
 ## Documentation
 
+### Mid-flight design changes
+
+Productivity Profile changed to better fit the available space and size requirements of the fields. 
+
 ### Recreation
 
 ### How-to guide
