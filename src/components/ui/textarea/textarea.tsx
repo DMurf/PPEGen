@@ -14,7 +14,7 @@ function GetTextArea(inputProps: textAreaProps){
       {inputProps.label}
     </label>
     <div className="control">
-      <textarea role="textarea" className="textarea" rows={inputProps.rows} placeholder={inputProps.placeholder} id={inputProps.id} name={inputProps.id} ></textarea>
+      <textarea role="textbox" className="textarea" rows={inputProps.rows} placeholder={inputProps.placeholder} id={inputProps.id} name={inputProps.id} ></textarea>
     </div>
     {inputProps.helpText.length === 0 ? null : <p className="help">{inputProps.helpText}</p>}
   </div>)

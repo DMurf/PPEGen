@@ -7,7 +7,7 @@ import '@testing-library/jest-dom'
 describe('Wounds populator', function() {
     test('is rendered', ()=> {
         render(<GetMutantPowers />);
-        const inputItem = screen.getByRole("select");
+        const inputItem = screen.getByRole("listbox");
         expect(inputItem).toBeInTheDocument();
     });
 

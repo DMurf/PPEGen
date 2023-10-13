@@ -18,7 +18,7 @@ const selectObj:selectProps ={
 describe('UI select', function() {
     test('is rendered', ()=> {
         render(<GetSelect id={selectObj.id} label={selectObj.label} customOptions={selectObj.customOptions} />);
-        const inputItem = screen.getByRole("select");
+        const inputItem = screen.getByRole("listbox");
         expect(inputItem).toBeInTheDocument()
     });
 });
